@@ -1,0 +1,6 @@
+#compdef pipenv
+_pipenv() {
+  eval "$(COMMANDLINE="pipenv" _PIPENV_COMPLETE="complete-zsh" pipenv)"
+}
+
+compdef _pipenv pipenv
